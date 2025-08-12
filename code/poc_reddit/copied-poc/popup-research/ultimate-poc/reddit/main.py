@@ -4,11 +4,11 @@ from flask import Flask, jsonify, redirect, render_template, session, url_for, r
 import requests
 import os
 
-CLIENT_ID = "l9528hDwAplYb_o9V3a30w"
-CLIENT_SECRET = "7MydBK8GzNU4fYFfGT1BwLWeOG9kXg"
+CLIENT_ID = "your_client_id"
+CLIENT_SECRET = "your_client_secret"
 REDIRECT_URI = "http://localhost:5000/callback/reddit"
 
-GOOGLE_CLIENT_ID = "287301326956-7hs3lvrtj9u0rfnnj0sa3djmu773dcbt.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = "your_google_client"
 POPUP_SIZE = [368,473]
 # BUTTON_OFFSET = { "pos": [289, 342], "size": [49, 22]}
 
@@ -89,3 +89,4 @@ def callback():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)
+
